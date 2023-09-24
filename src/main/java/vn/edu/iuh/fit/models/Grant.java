@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.lab_week01.models;
+package vn.edu.iuh.fit.models;
 
 public enum Grant {
     DISAABLE(0), ENABLE(1);
@@ -14,11 +14,11 @@ public enum Grant {
     }
 
     public static Grant fromCode(int code) throws IllegalAccessException {
-        for (Grant grant: Grant.values()){
-            if (grant.getCode() == code){
+        for (Grant grant : Grant.values()) {
+            if (grant.getCode() == code) {
                 return grant;
             }
         }
-        throw new IllegalAccessException("Invalid code: "+ code);
+        throw new IllegalAccessException("Invalid code: " + code);
     }
 }

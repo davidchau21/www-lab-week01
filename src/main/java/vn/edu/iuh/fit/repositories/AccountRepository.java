@@ -1,8 +1,8 @@
-package vn.edu.iuh.fit.lab_week01.repositories;
+package vn.edu.iuh.fit.repositories;
 
-import vn.edu.iuh.fit.lab_week01.db.ConnectDB;
-import vn.edu.iuh.fit.lab_week01.models.Account;
-import vn.edu.iuh.fit.lab_week01.models.Status;
+import vn.edu.iuh.fit.db.ConnectDB;
+import vn.edu.iuh.fit.models.Account;
+import vn.edu.iuh.fit.models.Status;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,22 +15,21 @@ public class AccountRepository {
     PreparedStatement preparedStatement = null;
     ResultSet resultSet = null;
 
-    public List<Account> getAllAcc(){
+    public List<Account> getAllAcc() {
         List<Account> accounts = new ArrayList<>();
         String query = "SELECT * FROM account";
-        try{
+        try {
             connection = new ConnectDB().getConnection();
             preparedStatement = connection.prepareStatement(query);
             resultSet = preparedStatement.executeQuery();
-            while(resultSet.next()){
+            while (resultSet.next()) {
                 accounts.add(new Account(
                         resultSet.getString(1),
                         resultSet.getString(2),
                         resultSet.getString(3),
                         resultSet.getString(4),
                         resultSet.getString(5),
-                    Status.fromCode(resultSet.getInt("status"))
-                ));
+                        Status.fromCode(resultSet.getInt("status"))));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -39,7 +38,7 @@ public class AccountRepository {
         return accounts;
     }
 
-    public Account login(String email, String password){
+    public Account login(String email, String password) {
         String query = "select * from account where email = ? and password = ?";
         try {
             connection = new ConnectDB().getConnection();
@@ -54,8 +53,7 @@ public class AccountRepository {
                         resultSet.getString(3),
                         resultSet.getString(4),
                         resultSet.getString(5),
-                        Status.fromCode(resultSet.getInt("status"))
-                );
+                        Status.fromCode(resultSet.getInt("status")));
 
                 return account;
             }

@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.lab_week01.models;
+package vn.edu.iuh.fit.models;
 
 public enum Status {
     ACTIVE(1), DEACTIVE(0), DELETE(-1);
@@ -14,11 +14,11 @@ public enum Status {
     }
 
     public static Status fromCode(int code) throws IllegalAccessException {
-        for (Status status: Status.values()) {
-            if (status.getCode() == code){
+        for (Status status : Status.values()) {
+            if (status.getCode() == code) {
                 return status;
             }
         }
-        throw new IllegalAccessException("Incalid AccountStatus code: "+ code);
+        throw new IllegalAccessException("Incalid AccountStatus code: " + code);
     }
 }

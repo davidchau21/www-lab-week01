@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.lab_week01.models;
+package vn.edu.iuh.fit.models;
 
 public class Role {
     private String role_id;

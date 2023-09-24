@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.lab_week01.db;
+package vn.edu.iuh.fit.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,10 +10,10 @@ public class ConnectDB {
 
     public ConnectDB() throws ClassNotFoundException, SQLException {
         Class.forName("org.mariadb.jdbc.Driver");
-        String url = "jdbc:ariadb://localhost:3360/mydb?createDatabaseIfNotExist=true";
+        String url = "jdbc:mariadb://mysql:3306/mydb?createDatabaseIfNotExist=true";
         String use = "root";
         String password = "sapassword";
-        connection = DriverManager.getConnection(url,use,password);
+        connection = DriverManager.getConnection(url, use, password);
 
     }
 
@@ -22,33 +22,33 @@ public class ConnectDB {
     }
 
     public static ConnectDB getInstance() throws SQLException, ClassNotFoundException {
-        if(instance == null){
+        if (instance == null) {
             instance = new ConnectDB();
         }
         return instance;
     }
 
-    public boolean isConnected(){
-        try{
+    public boolean isConnected() {
+        try {
             return connection != null && !connection.isClosed();
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
 
     }
 
-    public static void main(String[] args) {
-        try {
-            ConnectDB connectionDB = ConnectDB.getInstance();
-            if (connectionDB.isConnected()){
-                System.out.printf("Sucuess");
-            }else{
-                System.out.printf("Failse");
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-            System.out.println("Lỗi khi kết nối đến cơ sở dữ liệu.");
-        }
-    }
+    // public static void main(String[] args) {
+    // try {
+    // ConnectDB connectionDB = ConnectDB.getInstance();
+    // if (connectionDB.isConnected()){
+    // System.out.printf("Sucuess");
+    // }else{
+    // System.out.printf("Failse");
+    // }
+    // }catch (Exception e){
+    // e.printStackTrace();
+    // System.out.println("Lỗi khi kết nối đến cơ sở dữ liệu.");
+    // }
+    // }
 }
