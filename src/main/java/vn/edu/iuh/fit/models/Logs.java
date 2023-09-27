@@ -1,19 +1,40 @@
 package vn.edu.iuh.fit.models;
 
+import java.sql.Timestamp;
 import java.time.LocalDate;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "logs")
 public class Logs {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(columnDefinition = "bigint")
+    private long id;
+
+    @Column(columnDefinition = "varchar(50)")
     private String account_id;
-    private LocalDate login_time;
-    private LocalDate logout_time;
+
+    @Column(columnDefinition = "datetime")
+    private Timestamp login_time;
+
+    @Column(columnDefinition = "datetime")
+    private Timestamp logout_time;
+
+    @Column(columnDefinition = "varchar(250)")
     private String notes;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -23,22 +44,6 @@ public class Logs {
 
     public void setAccount_id(String account_id) {
         this.account_id = account_id;
-    }
-
-    public LocalDate getLogin_time() {
-        return login_time;
-    }
-
-    public void setLogin_time(LocalDate login_time) {
-        this.login_time = login_time;
-    }
-
-    public LocalDate getLogout_time() {
-        return logout_time;
-    }
-
-    public void setLogout_time(LocalDate logout_time) {
-        this.logout_time = logout_time;
     }
 
     public String getNotes() {
@@ -52,8 +57,7 @@ public class Logs {
     public Logs() {
     }
 
-    public Logs(int id, String account_id, LocalDate login_time, LocalDate logout_time, String notes) {
-        this.id = id;
+    public Logs(String account_id, Timestamp login_time, Timestamp logout_time, String notes) {
         this.account_id = account_id;
         this.login_time = login_time;
         this.logout_time = logout_time;
@@ -69,5 +73,21 @@ public class Logs {
                 ", logout_time=" + logout_time +
                 ", notes='" + notes + '\'' +
                 '}';
+    }
+
+    public Timestamp getLogin_time() {
+        return login_time;
+    }
+
+    public void setLogin_time(Timestamp login_time) {
+        this.login_time = login_time;
+    }
+
+    public Timestamp getLogout_time() {
+        return logout_time;
+    }
+
+    public void setLogout_time(Timestamp logout_time) {
+        this.logout_time = logout_time;
     }
 }

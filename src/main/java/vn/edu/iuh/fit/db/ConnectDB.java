@@ -1,54 +1,32 @@
 package vn.edu.iuh.fit.db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 
 public class ConnectDB {
-    private Connection connection;
-    private static ConnectDB instance = null;
+    private static ConnectDB instance;
+    private EntityManagerFactory emf;
 
-    public ConnectDB() throws ClassNotFoundException, SQLException {
-        Class.forName("org.mariadb.jdbc.Driver");
-        String url = "jdbc:mariadb://mysql:3306/mydb?createDatabaseIfNotExist=true";
-        String use = "root";
-        String password = "sapassword";
-        connection = DriverManager.getConnection(url, use, password);
-
+    private ConnectDB() {
+        try {
+            emf = Persistence.createEntityManagerFactory("mydb");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
-    public Connection getConnection() {
-        return connection;
-    }
-
-    public static ConnectDB getInstance() throws SQLException, ClassNotFoundException {
+    public static ConnectDB getInstance() {
         if (instance == null) {
             instance = new ConnectDB();
         }
         return instance;
     }
 
-    public boolean isConnected() {
-        try {
-            return connection != null && !connection.isClosed();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-
+    public EntityManagerFactory getEmf() {
+        return emf;
     }
 
-    // public static void main(String[] args) {
-    // try {
-    // ConnectDB connectionDB = ConnectDB.getInstance();
-    // if (connectionDB.isConnected()){
-    // System.out.printf("Sucuess");
-    // }else{
-    // System.out.printf("Failse");
-    // }
-    // }catch (Exception e){
-    // e.printStackTrace();
-    // System.out.println("Lỗi khi kết nối đến cơ sở dữ liệu.");
-    // }
-    // }
+    public class getInstance {
+    }
+
 }

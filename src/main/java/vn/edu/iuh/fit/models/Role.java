@@ -1,10 +1,27 @@
 package vn.edu.iuh.fit.models;
 
+import org.checkerframework.checker.units.qual.C;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "role")
 public class Role {
+    @Id
+    @Column(columnDefinition = "varchar(50)")
     private String role_id;
+
+    @Column(columnDefinition = "varchar(50)")
     private String role_name;
+
+    @Column(columnDefinition = "varchar(50)")
     private String description;
-    private Status status;
+
+    @Column(columnDefinition = "tinyint")
+    private byte status;
 
     public String getRole_id() {
         return role_id;
@@ -30,18 +47,18 @@ public class Role {
         this.description = description;
     }
 
-    public Status getStatus() {
+    public byte getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(byte status) {
         this.status = status;
     }
 
     public Role() {
     }
 
-    public Role(String role_id, String role_name, String description, Status status) {
+    public Role(String role_id, String role_name, String description, byte status) {
         this.role_id = role_id;
         this.role_name = role_name;
         this.description = description;
