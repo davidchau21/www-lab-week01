@@ -9,7 +9,7 @@ public class ConnectDB {
 
     private ConnectDB() {
         try {
-            emf = Persistence.createEntityManagerFactory("mydb");
+            emf = Persistence.createEntityManagerFactory("persistence01");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -26,7 +26,5 @@ public class ConnectDB {
         return emf;
     }
 
-    public class getInstance {
-    }
 
 }
