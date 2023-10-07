@@ -78,7 +78,7 @@ public class ControllerServet extends HttpServlet {
             if (!account.getPassword().equals(pwd)) {
                 Cookie cookie = new Cookie("state_login", "user_pwd_fail");
                 resp.addCookie(cookie);
-                resp.sendRedirect("login.html");
+                resp.sendRedirect("index.jsp");
             } else {
                 Cookie cookie = new Cookie("state_login", "oke");
                 resp.addCookie(cookie);
@@ -103,7 +103,7 @@ public class ControllerServet extends HttpServlet {
         } else {
             Cookie cookie = new Cookie("state_login", "user_null");
             resp.addCookie(cookie);
-            resp.sendRedirect("login.html");
+            resp.sendRedirect("index.jsp");
         }
     }
 
