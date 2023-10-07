@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05133b2d-b03f-4023-8256-5956997dc140" name="Changes" comment="create project">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/AddAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/DelAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/LogoutControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ViewAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ViewLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ControllerServet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ControllerServet.java" afterDir="false" />
-    </list>
+    <list default="true" id="05133b2d-b03f-4023-8256-5956997dc140" name="Changes" comment="final lab1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -369,7 +359,7 @@
       <workItem from="1696422095352" duration="4340000" />
       <workItem from="1696580749522" duration="3595000" />
       <workItem from="1696584738249" duration="10493000" />
-      <workItem from="1696658585466" duration="1074000" />
+      <workItem from="1696658585466" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="update project">
       <option name="closed" value="true" />
@@ -379,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694783509599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="final lab1">
+      <option name="closed" value="true" />
+      <created>1696662751326</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696662751326</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,6 +396,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update project" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project" />
+    <MESSAGE value="final lab1" />
+    <option name="LAST_COMMIT_MESSAGE" value="final lab1" />
   </component>
 </project>
