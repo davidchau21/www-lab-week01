@@ -21,4 +21,5 @@ xóa, sửa và cấp quyền). Còn không (không phải admin) thì hiển th
   ![ERD](/img/ERD.png)
 
   -  Class Diagram:
+![Class](/img/ClassDiagram.png)
     
