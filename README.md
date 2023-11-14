@@ -18,4 +18,8 @@ xóa, sửa và cấp quyền). Còn không (không phải admin) thì hiển th
 > 
 -  Entity Relationship Diagram:
 
-  ![ERD](/img/img1.png)
+  ![ERD](/img/ERD.png)
+
+  -  Class Diagram:
+![Class](/img/ClassDiagram.png)
+    
