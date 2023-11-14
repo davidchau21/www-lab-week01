@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <%include file="dashboard_admin.jsp"%>
+    <%@include file="dashboard_admin.jsp"%>
     <div class="container">
         <table>
             <thead>
