@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05133b2d-b03f-4023-8256-5956997dc140" name="Changes" comment="add img, fix viewLog">
+    <list default="true" id="05133b2d-b03f-4023-8256-5956997dc140" name="Changes" comment="fix and update frontend">
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dashboard_user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/login.png" afterDir="false" />
@@ -422,7 +422,7 @@
       <workItem from="1699862240763" duration="660000" />
       <workItem from="1699863629847" duration="105000" />
       <workItem from="1699964342034" duration="2091000" />
-      <workItem from="1700740654516" duration="10009000" />
+      <workItem from="1700740654516" duration="10329000" />
     </task>
     <task id="LOCAL-00001" summary="update project">
       <option name="closed" value="true" />
@@ -456,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699968665299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix and update frontend">
+      <option name="closed" value="true" />
+      <created>1700752440448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700752440448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,6 +486,7 @@
     <MESSAGE value="final lab1" />
     <MESSAGE value="add ERD Class Diagram" />
     <MESSAGE value="add img, fix viewLog" />
-    <option name="LAST_COMMIT_MESSAGE" value="add img, fix viewLog" />
+    <MESSAGE value="fix and update frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix and update frontend" />
   </component>
 </project>
