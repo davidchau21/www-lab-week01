@@ -25,6 +25,17 @@ xóa, sửa và cấp quyền). Còn không (không phải admin) thì hiển th
 
 - Trang login
   ![login](img/login.png)
-- Trang view account
-  ![account](img/viewAccount.png)
+- Login với quyền admin
+  - Các quyền của admin
+    ![account](img/viewAdmin.png)
+  - Quản lý các account
+    ![acc](img/viewAcc.png)
+  - Xem các log của mỗi account đăng nhập
+    ![log](img/viewLog.png)
+  - Các chức năng của admin:
+    - Thêm 1 Account
+    - Xóa 1 Account
+  - Login với quyền user
+    ![user](img/viewUser.png)
+    
     
