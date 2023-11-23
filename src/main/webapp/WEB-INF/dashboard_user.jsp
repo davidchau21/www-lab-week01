@@ -1,14 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: admin
-  Date: 29/9/2023
-  Time: 6:53 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Dashboard Admin</title>
+    <title>Dashboard User</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -16,7 +9,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-
     <style>
         .navbar {
             background-color: #91eadc;
@@ -34,13 +26,9 @@
 <div>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">David Chau</a>
-            </div>
             <ul class="nav navbar-nav">
-                <li id="account"><a href="/lab_week01/ViewAccount">Manager Account</a></li>
-                <li id="log"><a href="/lab_week01/ViewLog">Manager Log</a></li>
-                <li ><a href="/lab_week01/LogoutControl"><i class="fas fa-sign-out-alt"></i> LogOut</a></li>
+                <li> <a class="navbar-brand" href="#" >Home</a></li>
+                <li ><a href="/lab_week01/LogoutControl" ><i class="fas fa-sign-out-alt"></i> LogOut</a></li>
             </ul>
         </div>
     </nav>

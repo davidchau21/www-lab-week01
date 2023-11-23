@@ -14,8 +14,8 @@ public class GrantAccessServices_test {
         Role role1 = RoleServices.getRoles().get(0);
         Role role2 = RoleServices.getRoles().get(1);
 
-        GrantAccess grantAccess1 = new GrantAccess(true, "", account2, role1);
-        GrantAccess grantAccess2 = new GrantAccess(true, "", account1, role2);
+        GrantAccess grantAccess1 = new GrantAccess(true, "", account1, role1);
+        GrantAccess grantAccess2 = new GrantAccess(true, "", account2, role2);
 
         GrantAccessServices.insertGrantAccess(grantAccess1);
         GrantAccessServices.insertGrantAccess(grantAccess2);

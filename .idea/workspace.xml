@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05133b2d-b03f-4023-8256-5956997dc140" name="Changes" comment="add ERD Class Diagram">
+    <list default="true" id="05133b2d-b03f-4023-8256-5956997dc140" name="Changes" comment="add img, fix viewLog">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dashboard_user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/viewAccount.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ControllerServet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ControllerServet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ViewAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/controllers/ViewAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/repositories/LogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/repositories/LogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/test/GrantAccessServices_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/iuh/fit/test/GrantAccessServices_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dashboar_user.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dashboard_admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dashboard_admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewAccount.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewLog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewLog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +106,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "E:/HKI_2023-2024/WWW-JAVA/BTTH/lab_week01",
@@ -120,23 +132,76 @@
       <recent name="E:\HKI_2023-2024\WWW-JAVA\BTTH\lab_week01\src\main\webapp\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.viewLog.jsp">
-    <configuration name="dashboard_admin.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Gradle___vn_edu_iuh_fit___lab_week01_1_0_SNAPSHOT_war__exploded_/WEB-INF/dashboard_admin.jsp">
-      <method v="2" />
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.13">
+    <configuration name="AccountServices_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vn.edu.iuh.fit.test.AccountServices_test" />
+      <module name="lab_week01.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.edu.iuh.fit.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Gradle___vn_edu_iuh_fit___lab_week01_1_0_SNAPSHOT_war__exploded_/index.jsp">
-      <method v="2" />
+    <configuration name="ConnectDB_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vn.edu.iuh.fit.test.ConnectDB_test" />
+      <module name="lab_week01.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.edu.iuh.fit.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="viewAccount.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Gradle___vn_edu_iuh_fit___lab_week01_1_0_SNAPSHOT_war__exploded_/WEB-INF/viewAccount.jsp">
-      <method v="2" />
+    <configuration name="GrantAccessServices_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vn.edu.iuh.fit.test.GrantAccessServices_test" />
+      <module name="lab_week01.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.edu.iuh.fit.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="viewLog.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Gradle___vn_edu_iuh_fit___lab_week01_1_0_SNAPSHOT_war__exploded_/WEB-INF/viewLog.jsp">
-      <method v="2" />
+    <configuration name="LogServices_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vn.edu.iuh.fit.test.LogServices_test" />
+      <module name="lab_week01.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.edu.iuh.fit.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleServices_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vn.edu.iuh.fit.test.RoleServices_test" />
+      <module name="lab_week01.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.edu.iuh.fit.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Tomcat 10.1.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.13" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Gradle : vn.edu.iuh.fit : lab_week01.war">
+        <artifact name="Gradle : vn.edu.iuh.fit : lab_week01-1.0-SNAPSHOT.war (exploded)">
           <settings>
             <option name="CONTEXT_PATH" value="/lab_week01" />
           </settings>
@@ -215,7 +280,9 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : vn.edu.iuh.fit : lab_week01-1.0-SNAPSHOT.war (exploded)" />
+        </option>
       </method>
     </configuration>
     <configuration name="Tomcat 10.1.131" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.131" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -305,61 +372,22 @@
         </option>
       </method>
     </configuration>
-    <configuration name="viewAccount.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 10.1.131" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/viewAccount.jsp" />
-      <deployment>
-        <artifact name="Gradle : vn.edu.iuh.fit : lab_week01-1.0-SNAPSHOT.war (exploded)">
-          <settings>
-            <option name="CONTEXT_PATH" value="/Gradle___vn_edu_iuh_fit___lab_week01_1_0_SNAPSHOT_war__exploded_" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="9e6c40d6-5536-4e8e-ae78-d778aa524635" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : vn.edu.iuh.fit : lab_week01-1.0-SNAPSHOT.war (exploded)" />
-        </option>
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.dashboard_admin.jsp" />
-      <item itemvalue="JavaScript Debug.index.jsp" />
-      <item itemvalue="JavaScript Debug.viewAccount.jsp" />
-      <item itemvalue="JavaScript Debug.viewLog.jsp" />
+      <item itemvalue="Application.AccountServices_test" />
+      <item itemvalue="Application.ConnectDB_test" />
+      <item itemvalue="Application.GrantAccessServices_test" />
+      <item itemvalue="Application.LogServices_test" />
+      <item itemvalue="Application.RoleServices_test" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.13" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.131" />
-      <item itemvalue="Tomcat Server.viewAccount.jsp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.viewLog.jsp" />
-        <item itemvalue="Tomcat Server.viewAccount.jsp" />
-        <item itemvalue="JavaScript Debug.viewAccount.jsp" />
-        <item itemvalue="JavaScript Debug.dashboard_admin.jsp" />
-        <item itemvalue="JavaScript Debug.index.jsp" />
+        <item itemvalue="Application.ConnectDB_test" />
+        <item itemvalue="Application.AccountServices_test" />
+        <item itemvalue="Application.RoleServices_test" />
+        <item itemvalue="Application.GrantAccessServices_test" />
+        <item itemvalue="Application.LogServices_test" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +421,8 @@
       <workItem from="1699857079803" duration="2663000" />
       <workItem from="1699862240763" duration="660000" />
       <workItem from="1699863629847" duration="105000" />
-      <workItem from="1699964342034" duration="1734000" />
+      <workItem from="1699964342034" duration="2091000" />
+      <workItem from="1700740654516" duration="10009000" />
     </task>
     <task id="LOCAL-00001" summary="update project">
       <option name="closed" value="true" />
@@ -419,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699861757147</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add img, fix viewLog">
+      <option name="closed" value="true" />
+      <created>1699968665299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699968665299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,6 +477,7 @@
     <MESSAGE value="update project" />
     <MESSAGE value="final lab1" />
     <MESSAGE value="add ERD Class Diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ERD Class Diagram" />
+    <MESSAGE value="add img, fix viewLog" />
+    <option name="LAST_COMMIT_MESSAGE" value="add img, fix viewLog" />
   </component>
 </project>

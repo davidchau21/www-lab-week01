@@ -30,7 +30,7 @@ public class LogRepository {
         EntityTransaction tr = em.getTransaction();
         tr.begin();
         try {
-            String sql = "select * from log";
+            String sql = "select * from logs";
             List<Logs> rl = em.createNativeQuery(sql, Logs.class).getResultList();
 
             tr.commit();

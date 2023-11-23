@@ -15,7 +15,7 @@ import java.util.List;
 @WebServlet("/ViewAccount")
 public class ViewAccount extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Account> accounts = AccountServices.getAccounts();
         req.setAttribute("listAccounts",accounts);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/viewAccount.jsp");
