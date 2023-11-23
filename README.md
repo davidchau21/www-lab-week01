@@ -22,4 +22,9 @@ xóa, sửa và cấp quyền). Còn không (không phải admin) thì hiển th
 
   -  Class Diagram:
 ![Class](/img/ClassDiagram.png)
+
+- Trang login
+  ![login](img/login.png)
+- Trang view account
+  ![account](img/viewAccount.png)
     
